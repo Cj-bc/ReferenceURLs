@@ -1,4 +1,3 @@
-#!/bin/bash
 #
 # ReferenceURLs(rurl)
 #
@@ -16,6 +15,7 @@ func show {
 }
 
 func saveurl {
+    local projectname=`pwd | awk -F "/" ' 
     echo $@ >> .refurl
 }
     
