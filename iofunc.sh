@@ -16,7 +16,7 @@ function show {
 
 function saveurl {
     local projectname=`pwd | rev | cut -d "/" -f 1 | rev` 
-    local data=`echo $@ | sed -e 's/ /@/1'`
+    local data=`echo $@ | sed -e 's/ / --> /1'`
     echo $data >> .refurl
 }
     
